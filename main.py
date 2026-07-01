@@ -26,6 +26,11 @@ async def tel(message: Message):
 @dp.message(Command('baxa'))
 async def baxa(message: Message):
     await message.answer('atim baxa')
+
+
+@dp.message(Command('location'))
+async def location(message: Message):
+    await message.answer('Nokis qalasi')
 async def main():
     await dp.start_polling(bot)
 
