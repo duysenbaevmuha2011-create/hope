@@ -23,6 +23,9 @@ async def help(message: Message):
 async def tel(message: Message):
     await message.answer('+998936022010')
 
+@dp.message(Command('baxa'))
+async def baxa(message: Message):
+    await message.answer('atim baxa')
 async def main():
     await dp.start_polling(bot)
 
