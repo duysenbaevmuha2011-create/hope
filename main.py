@@ -19,6 +19,10 @@ async def start(message: Message):
 async def help(message: Message):
     await message.answer('Sizge qanday jardem kerek')
 
+@dp.message(Command('tel'))
+async def tel(message: Message):
+    await message.answer('+998936022010')
+
 async def main():
     await dp.start_polling(bot)
 
